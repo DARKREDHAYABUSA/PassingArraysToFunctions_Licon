@@ -5,6 +5,7 @@
 using namespace std;
 
 void printArray(int[], int); //Prototype
+void sortArrAsc(int[], int);
 
 
 int main() 
@@ -31,4 +32,29 @@ void printArray(int arrayVals[], int size)
   cout << arrayVals[i] << endl;
 }
 
+}
+
+
+//Using Bubble Sort to sort array Asc
+void sortArrAsc(int arrayVals[], int size)
+{
+  int temp = 0; //needed for swap process
+  for(int left = 0; left < size; left++) //number on left
+{
+  //the number on the right
+  for(int right = left+1; right < size; right++)
+ {
+  //the swap magic happens here
+  //Bubble sort: compare the left num to the right num
+  //swap, if neccessary
+  if(arrayVals[left] > arrayVals[right])
+{
+    temp = arrayVals[left];
+    arrayVals[left] = arrayVals[right];
+    arrayVals[right] = temp;
+    }
+  }
+}
+  //call the printArray function here
+  printArray(arrayVals, size);
 }
