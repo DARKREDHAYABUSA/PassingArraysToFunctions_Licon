@@ -9,6 +9,15 @@ void printArray(int[], int); //Prototype
 
 int main() 
 {
+int numbers[8] = {23, 46, 12, 24, 1}; //5 of possible values
+numbers[5] = 500; //assign 500 to the 6th element
+numbers[6] = 1000;
+numbers [7] = 89;
+
+//get the size of numbers now that it has data
+int numbers_array_size = sizeof(numbers) / sizeof(int);
+cout << "This array has " << numbers_array_size << " values\n";
+
 
   return 0;
 }
