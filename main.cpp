@@ -4,10 +4,11 @@
 #include <iostream>
 using namespace std;
 
+void printArray(int[], int); //Prototype
+
 
 int main() 
 {
-
 
   return 0;
 }
