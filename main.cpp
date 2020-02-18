@@ -21,3 +21,13 @@ cout << "This array has " << numbers_array_size << " values\n";
 
   return 0;
 }
+//Function definition
+void printArray(int arrayVals[], int size)
+{
+cout << "\nPrinted values: " << endl;
+for(int i = 0; i < size; i++)
+{
+  cout << arrayVals[i] << endl;
+}
+
+}
