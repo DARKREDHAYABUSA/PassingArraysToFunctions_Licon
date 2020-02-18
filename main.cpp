@@ -18,14 +18,15 @@ numbers [7] = 89;
 int numbers_array_size = sizeof(numbers) / sizeof(int);
 cout << "This array has " << numbers_array_size << " values\n";
 
-
+//call the printArray pass as argument numbers, numbers_array_size
+printArray(numbers, numbers_array_size);
   return 0;
 }
 //Function definition
 void printArray(int arrayVals[], int size)
 {
-cout << "\nPrinted values: " << endl;
-for(int i = 0; i < size; i++)
+  cout << "\nPrinted values: " << endl;
+    for(int i = 0; i < size; i++)
 {
   cout << arrayVals[i] << endl;
 }
